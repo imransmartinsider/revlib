@@ -1,16 +1,23 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [vue()],
-  optimizeDeps: {
-    include: ['revlib']  // Ensure 'revlib' is included in optimization
-  },
-  resolve: {
-    alias: {
-      'revlib': 'revlib/dist/index.esm.js',
-      '@revlib': 'revlib/dist/index.js'  // Add CommonJS alias if needed
+  build: {
+    lib: {
+      entry: './src/index.js',
+      name: 'MyVueLibrary',
+      fileName: (format) => `my-vue-library.${format}.js`
+    },
+    rollupOptions: {
+      // Make sure to externalize deps that shouldn't be bundled into your library
+      external: ['vue'],
+      output: {
+        // Provide global variables to use in the UMD build for externalized deps
+        globals: {
+          vue: 'Vue'
+        }
+      }
     }
   }
 });
