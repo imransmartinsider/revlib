@@ -1,3 +1,3 @@
 import DynamicTable from './components/DynamicTable.vue';
 
-export { DynamicTable };
+export default DynamicTable;
