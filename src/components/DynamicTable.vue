@@ -94,7 +94,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .api-input {
   margin-bottom: 20px;
 }
