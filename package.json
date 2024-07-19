@@ -1,0 +1,27 @@
+{
+  "name": "revlib",
+  "version": "1.0.52",
+  "description": "A revolutionary Vue 3 library that dynamically creates and updates a table based on API calls.",
+  "main": "dist/revlib.umd.js",
+  "module": "dist/revlib.es.js",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  },
+  "author": "Imran Khaliq",
+  "email": "imran.smartinsider@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imransmartinsider/revlib.git"
+  }
+}
