@@ -1,9 +1,9 @@
 {
   "name": "revlib",
-  "version": "1.0.52",
+  "version": "1.0.53",
   "description": "A revolutionary Vue 3 library that dynamically creates and updates a table based on API calls.",
-  "main": "dist/revlib.umd.js",
-  "module": "dist/revlib.es.js",
+  "main": "dist/my-vue-library.umd.js",
+  "module": "dist/my-vue-library.es.js",
   "files": ["dist"],
   "scripts": {
     "dev": "vite",
